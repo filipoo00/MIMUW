@@ -1,0 +1,13 @@
+cabal-version:      3.4
+name:               ff417568-zadanie2
+version:            0.1.0.0
+
+common warnings
+    ghc-options: -Wall -Wunused-imports
+
+executable zadanie2
+    import:           warnings
+    main-is:          Main.hs
+    other-modules:    Parser, Types, Reduction, DefMap
+    build-depends:    base >=4.14 && <4.19, haskell-src, containers 
+    hs-source-dirs:   src
